@@ -127,7 +127,7 @@ if st.button("Introduce about yourself"):
     st.session_state.messages.append({"role": "bot", "content": user_op})
 
 if st.button("What are your skills?"):
-    user_opp =rag_chain.invoke({"input": "what are your skills"})["answer"]
+    user_op =rag_chain.invoke({"input": "what are your skills"})["answer"]
 
     st.session_state.messages.append({"role": "user", "content": "What are your skills"})
     st.session_state.messages.append({"role": "bot", "content": user_op})
